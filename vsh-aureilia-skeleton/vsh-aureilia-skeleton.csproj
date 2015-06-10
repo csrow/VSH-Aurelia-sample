@@ -37,6 +37,7 @@
     <Content Include="index.html" />
     <Content Include="styles\styles.css" />
     <Content Include="ts\app.html" />
+    <Content Include="ts\welcome.html" />
     <Content Include="typings\aurelia-amd\aurelia-amd.d.js" />
     <Content Include="typings\core-js\core-js.d.js" />
     <Content Include="web.config" />
@@ -54,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="ts\app.ts" />
+    <TypeScriptCompile Include="ts\welcome.ts" />
     <TypeScriptCompile Include="typings\aurelia-amd\aurelia-amd.d.ts" />
     <TypeScriptCompile Include="typings\aurelia\aurelia-animator-css.d.ts" />
     <TypeScriptCompile Include="typings\aurelia\aurelia-app-contacts.d.ts" />

@@ -1,22 +1,16 @@
-define(["require", "exports"], function (require, exports) {
-    var Welcome = (function () {
-        function Welcome() {
-            this.heading = 'Welcome to the Aurelia Navigation App!';
-            this.firstName = 'John';
-            this.lastName = 'Doe';
+define(["require", "exports", 'bootstrap', 'bootstrap/css/bootstrap.css!'], function (require, exports) {
+    var App = (function () {
+        function App() {
         }
-        Object.defineProperty(Welcome.prototype, "fullName", {
-            get: function () {
-                return this.firstName + " " + this.lastName;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Welcome.prototype.welcome = function () {
-            alert("Welcome, " + this.fullName + "!");
+        App.prototype.configureRouter = function (config, router) {
+            config.title = 'Aurelia';
+            config.map([
+                { route: ['', 'welcome'], name: 'welcome', moduleId: './welcome', nav: true, title: 'Welcome' }
+            ]);
+            this.router = router;
         };
-        return Welcome;
+        return App;
     })();
-    exports.Welcome = Welcome;
+    exports.App = App;
 });
 //# sourceMappingURL=app.js.map
