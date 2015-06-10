@@ -38,6 +38,7 @@
     <Content Include="src\app.html" />
     <Content Include="src\app.js" />
     <Content Include="styles\styles.css" />
+    <Content Include="ts\child-router.html" />
     <Content Include="ts\flickr.html" />
     <Content Include="ts\nav-bar.html" />
     <Content Include="ts\welcome.html" />
@@ -55,6 +56,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <TypeScriptCompile Include="ts\child-router.ts" />
     <TypeScriptCompile Include="ts\flickr.ts" />
     <TypeScriptCompile Include="ts\nav-bar.ts" />
     <TypeScriptCompile Include="ts\welcome.ts" />
