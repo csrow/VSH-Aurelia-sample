@@ -18,5 +18,14 @@ define(["require", "exports"], function (require, exports) {
         return Welcome;
     })();
     exports.Welcome = Welcome;
+    var UpperValueConverter = (function () {
+        function UpperValueConverter() {
+        }
+        UpperValueConverter.prototype.toView = function (value) {
+            return value && value.toUpperCase();
+        };
+        return UpperValueConverter;
+    })();
+    exports.UpperValueConverter = UpperValueConverter;
 });
 //# sourceMappingURL=welcome.js.map

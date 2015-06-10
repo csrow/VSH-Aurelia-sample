@@ -56,8 +56,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <TypeScriptCompile Include="ts\cap-first-value-converter.ts" />
     <TypeScriptCompile Include="ts\child-router.ts" />
     <TypeScriptCompile Include="ts\flickr.ts" />
+    <TypeScriptCompile Include="ts\lower-value-converter.ts" />
     <TypeScriptCompile Include="ts\nav-bar.ts" />
     <TypeScriptCompile Include="ts\welcome.ts" />
     <TypeScriptCompile Include="typings\aurelia-amd\aurelia-amd.d.ts" />

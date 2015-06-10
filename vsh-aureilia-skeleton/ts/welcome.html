@@ -1,4 +1,7 @@
 ﻿<template>
+  <require from='./lower-value-converter'></require>
+  <require from='./cap-first-value-converter'></require>
+
   <section>
     <h2>${heading}</h2>
 
@@ -13,6 +16,12 @@
       </div>
       <div class="form-group">
         <label>Full Name</label>
+        <p class="help-block">${fullName}</p>
+        <label>Full Name Upper Case</label>
+        <!--<p class="help-block">${fullName | upper}</p>-->
+        <p class="help-block">${fullName}</p>
+        <label>Full Name Lower Case</label>
+        <!--<p class="help-block">${fullName | lower}</p>-->
         <p class="help-block">${fullName}</p>
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
