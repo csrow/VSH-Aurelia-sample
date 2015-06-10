@@ -13,4 +13,4 @@ define(["require", "exports", 'bootstrap', 'bootstrap/css/bootstrap.css!'], func
     })();
     exports.App = App;
 });
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=appts.js.map

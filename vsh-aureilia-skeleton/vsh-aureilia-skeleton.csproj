@@ -35,8 +35,10 @@
     <Content Include="config.js" />
     <Content Include="favicon.ico" />
     <Content Include="index.html" />
+    <Content Include="src\app.html" />
+    <Content Include="src\app.js" />
     <Content Include="styles\styles.css" />
-    <Content Include="ts\app.html" />
+    <Content Include="ts\appts.html" />
     <Content Include="ts\welcome.html" />
     <Content Include="typings\aurelia-amd\aurelia-amd.d.js" />
     <Content Include="typings\core-js\core-js.d.js" />
@@ -50,11 +52,9 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="src\" />
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="ts\app.ts" />
+    <TypeScriptCompile Include="ts\appts.ts" />
     <TypeScriptCompile Include="ts\welcome.ts" />
     <TypeScriptCompile Include="typings\aurelia-amd\aurelia-amd.d.ts" />
     <TypeScriptCompile Include="typings\aurelia\aurelia-animator-css.d.ts" />
