@@ -7,8 +7,8 @@ define(["require", "exports"], function (require, exports) {
                 return value;
             var firstLetterCap = value.slice(0, 1).toUpperCase();
             var restOfIt = value.slice(1);
-            value = firstLetterCap + restOfIt;
-            return value;
+            var changed = firstLetterCap + restOfIt;
+            return changed;
         };
         return CapFirstValueConverter;
     })();

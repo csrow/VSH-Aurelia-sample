@@ -5,7 +5,7 @@
     let firstLetterCap = value.slice(0, 1).toUpperCase();
     let restOfIt = value.slice(1);
 
-    value = firstLetterCap + restOfIt;
-    return value;
+    let changed = firstLetterCap + restOfIt;
+    return changed;
   }
 } 
