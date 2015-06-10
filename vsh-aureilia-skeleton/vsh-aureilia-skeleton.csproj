@@ -39,6 +39,7 @@
     <Content Include="src\app.js" />
     <Content Include="styles\styles.css" />
     <Content Include="ts\appts.html" />
+    <Content Include="ts\flickr.html" />
     <Content Include="ts\welcome.html" />
     <Content Include="typings\aurelia-amd\aurelia-amd.d.js" />
     <Content Include="typings\core-js\core-js.d.js" />
@@ -55,6 +56,7 @@
   <ItemGroup />
   <ItemGroup>
     <TypeScriptCompile Include="ts\appts.ts" />
+    <TypeScriptCompile Include="ts\flickr.ts" />
     <TypeScriptCompile Include="ts\welcome.ts" />
     <TypeScriptCompile Include="typings\aurelia-amd\aurelia-amd.d.ts" />
     <TypeScriptCompile Include="typings\aurelia\aurelia-animator-css.d.ts" />
