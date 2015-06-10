@@ -10,12 +10,13 @@ if (typeof __metadata !== "function") __metadata = function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 define(["require", "exports", 'aurelia-framework', 'aurelia-http-client'], function (require, exports, aurelia_framework_1, aurelia_http_client_1) {
+    //@inject(HttpClient)
     var Flickr = (function () {
-        //constructor(http:HttpClient) {
         function Flickr(http) {
             this.heading = 'Flickr';
             this.images = [];
             this.url = 'http://api.flickr.com/services/feeds/photos_public.gne?tags=rainier&tagmode=any&format=json';
+            //constructor(http) {
             this.http = http;
         }
         Flickr.prototype.activate = function () {
@@ -28,8 +29,8 @@ define(["require", "exports", 'aurelia-framework', 'aurelia-http-client'], funct
             return confirm('Are you sure you want to leave?');
         };
         Flickr = __decorate([
-            aurelia_framework_1.inject(aurelia_http_client_1.HttpClient), 
-            __metadata('design:paramtypes', [Object])
+            aurelia_framework_1.autoinject, 
+            __metadata('design:paramtypes', [aurelia_http_client_1.HttpClient])
         ], Flickr);
         return Flickr;
     })();
