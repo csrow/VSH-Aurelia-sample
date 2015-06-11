@@ -2,27 +2,25 @@
   <require from='./lower-value-converter'></require>
   <require from='./cap-first-value-converter'></require>
 
-  <section>
+  <section class="au-animate">
     <h2>${heading}</h2>
 
     <form role="form" submit.delegate="welcome()">
       <div class="form-group">
         <label for="fn">First Name</label>
-        <input type="text" value.bind="firstName" class="form-control" id="fn" placeholder="first name">
+        <input type="text" value.bind="firstName | capFirst" class="form-control" id="fn" placeholder="first name">
       </div>
       <div class="form-group">
         <label for="ln">Last Name</label>
-        <input type="text" value.bind="lastName" class="form-control" id="ln" placeholder="last name">
+        <input type="text" value.bind="lastName | capFirst" class="form-control" id="ln" placeholder="last name">
       </div>
       <div class="form-group">
         <label>Full Name</label>
         <p class="help-block">${fullName}</p>
         <label>Full Name Upper Case</label>
-        <!--<p class="help-block">${fullName | upper}</p>-->
-        <p class="help-block">${fullName}</p>
+        <p class="help-block">${fullName | upper}</p>
         <label>Full Name Lower Case</label>
-        <!--<p class="help-block">${fullName | lower}</p>-->
-        <p class="help-block">${fullName}</p>
+        <p class="help-block">${fullName | lower}</p>
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
