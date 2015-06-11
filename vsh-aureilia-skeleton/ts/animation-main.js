@@ -3,6 +3,7 @@ define(["require", "exports"], function (require, exports) {
         aurelia.use
             .standardConfiguration()
             .developmentLogging()
+            .plugin('aurelia-validation')
             .plugin('aurelia-animator-css');
         aurelia.start().then(function (a) { return a.setRoot(); });
     }

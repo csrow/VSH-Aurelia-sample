@@ -37,11 +37,12 @@
     <Content Include="index.html" />
     <Content Include="src\app.html" />
     <Content Include="src\app.js" />
+    <Content Include="src\welcome.js" />
     <Content Include="styles\styles.css" />
     <Content Include="ts\child-router.html" />
     <Content Include="ts\flickr.html" />
     <Content Include="ts\nav-bar.html" />
-    <Content Include="ts\welcome.html" />
+    <Content Include="src\welcome.html" />
     <Content Include="typings\aurelia-amd\aurelia-amd.d.js" />
     <Content Include="typings\core-js\core-js.d.js" />
     <Content Include="web.config" />
@@ -62,7 +63,6 @@
     <TypeScriptCompile Include="ts\flickr.ts" />
     <TypeScriptCompile Include="ts\lower-value-converter.ts" />
     <TypeScriptCompile Include="ts\nav-bar.ts" />
-    <TypeScriptCompile Include="ts\welcome.ts" />
     <TypeScriptCompile Include="typings\aurelia-amd\aurelia-amd.d.ts" />
     <TypeScriptCompile Include="typings\aurelia\aurelia-animator-css.d.ts" />
     <TypeScriptCompile Include="typings\aurelia\aurelia-app-contacts.d.ts" />
