@@ -31,7 +31,7 @@ To run the app, follow these steps.
   ```shell
   jspm install aurelia-validation=github:aurelia/validation@master
   ```
-7. Start Visual Studio and build the project and debug on Chrome browser.
+7. Start Visual Studio and install [Task Runner Explorer](https://visualstudiogallery.msdn.microsoft.com/8e1b4368-4afb-467a-bc13-9650572db708)  before building the project.  Debug on Chrome browser.
 
 
 > Note: At present there is a bug in the HTMLImports polyfill which only occurs on IE. We have submitted a pull request to the team with the fix. In the mean time, if you want to test on IE, you can work around the issue by explicitly adding a script tag before you load system.js. The script tag should look something like this (be sure to confirm the version number):
